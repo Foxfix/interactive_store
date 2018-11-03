@@ -10,6 +10,7 @@ const sideDrawer = (props) => {
   if (props.open) {
     attachedClasses = [classes.SideDrawer, classes.Open]
   }
+
   return (
     <Aux>
       <Backdrop show={props.open} clicked={props.closed}/>
@@ -17,7 +18,6 @@ const sideDrawer = (props) => {
         <div className={classes.Logo}>
           <Logo/>
         </div>
-
         <nav>
           <NavigationItems/>
         </nav>
